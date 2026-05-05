@@ -1,6 +1,5 @@
 package ht.mbds.samanthahenry.tp1samanthahenry09.jsf;
 
-import ht.mbds.samanthahenry.tp1samanthahenry09.service.Modificateur;
 import jakarta.faces.application.FacesMessage;
 import jakarta.faces.context.FacesContext;
 import jakarta.faces.model.SelectItem;
@@ -20,11 +19,15 @@ import java.util.List;
 @Named
 @ViewScoped
 public class Bb implements Serializable {
+
+
+
     /**
      * Rôle "système" que l'on attribuera plus tard à un LLM.
      * Possible d'écrire un nouveau rôle dans la liste déroulante.
      */
     private String roleSysteme;
+
 
     /**
      * Quand le rôle est choisi par l'utilisateur dans la liste déroulante,
@@ -190,4 +193,5 @@ public class Bb implements Serializable {
 
         return this.listeRolesSysteme;
     }
+
 }
