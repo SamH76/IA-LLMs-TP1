@@ -20,7 +20,9 @@ import java.util.List;
 @ViewScoped
 public class Bb implements Serializable {
 
-
+    private String texteRequeteJson;
+    private String texteReponseJson;
+    private boolean debug;
 
     /**
      * Rôle "système" que l'on attribuera plus tard à un LLM.
@@ -69,6 +71,26 @@ public class Bb implements Serializable {
      * Obligatoire pour un bean CDI (classe gérée par CDI), s'il y a un autre constructeur.
      */
     public Bb() {
+    }
+
+    public String getTexteRequeteJson() {
+        return texteRequeteJson;
+    }
+    public void setTexteRequeteJson(String texteRequeteJson) {
+        this.texteRequeteJson = texteRequeteJson;
+    }
+
+    public String getTexteReponseJson() {
+        return texteReponseJson;
+    }
+    public void setTexteReponseJson(String texteReponseJson) {
+        this.texteReponseJson = texteReponseJson;
+    }
+    public boolean isDebug() {
+        return debug;
+    }
+    public void setDebug(boolean debug) {
+        this.debug = debug;
     }
 
     public String getRoleSysteme() {
@@ -192,6 +214,10 @@ public class Bb implements Serializable {
         }
 
         return this.listeRolesSysteme;
+    }
+
+    public void toggleDebug() {
+        this.setDebug(!isDebug());
     }
 
 }
