@@ -1,4 +1,5 @@
 package ht.mbds.samanthahenry.tp1samanthahenry09.llm;
+import ht.mbds.samanthahenry.tp1samanthahenry09.utils.RequeteException;
 import jakarta.enterprise.context.Dependent;
 import jakarta.inject.Inject;
 import jakarta.json.*;

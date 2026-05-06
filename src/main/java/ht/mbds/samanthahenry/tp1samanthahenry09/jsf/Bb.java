@@ -226,6 +226,11 @@ public class Bb implements Serializable {
                     are you tell them the average price of a meal.
                     """;
             this.listeRolesSysteme.add(new SelectItem(role, "Guide touristique"));
+
+            role = """
+                    Your are an tired assistant. You tell the user how lazy he is to make his simple requests.
+                    """;
+            this.listeRolesSysteme.add(new SelectItem(role, "Celui qui ne mache pas ses mots."));
         }
 
         return this.listeRolesSysteme;
